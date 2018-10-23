@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>hello world</title>
+		<style type="text/css">
+
+
+
+		#text{
+			font-size: 90px;
+			font-family: monospace;
+			color: Chartreuse;
+			text-align: center;
+			margin: auto;
+			box-shadow: 0px 0px 20px 20px black;
+			text-shadow: 0 0 30px rgba(127, 255, 0, 0.6);
+		}
+		body{
+			background-color: black;
+			margin: 0px;
+		}
+
+		div {
+			  	height: 100vh;
+			  	line-height: 100vh;
+			}
+
+
+		</style>
+	</head>
+
+
+	<body>
+		<div id='text'></div>
+		
+
+
+		<script type="text/javascript">
+			
+
+			// var a = ['z','?','c','d','&','f','g','h','i','*','k','w','g',':','o','P','9',';','w','t','k','2',']','[','w',':','*','k','w','g',':','o','P','9'];
+			var b = ['4','5','f','g','£','b','i','i','6','U','A','1','7','8','@','<','>','f','h','j','1','?','h','6','L','€','U','A','1','7','8','@','<','>'];
+			var c = ['l','?','h','R','l','R','l','l','$','£','#','G','G','P','s',':','/','5','#','r','O','u','*','£','$','l','£','#','G','G','P','s',':','/'];
+			var d = ['e','3','u','d','f','R','1','!','Y','x','?','t','F','F','i',':','*','5','9','*','9','%','l','P','3','7','x','?','t','F','F','i',':','*'];
+			var e = ['~','x','€','1','+','=',')','8','o','k','k','%','0','l','k','7','=','0',')','0','9','%','c','}','d','>','k','k','%','0','l','k','7','='];
+
+			var a = [
+				'hel0o',
+				'hel_o',
+				'hel_o',
+				'hel_o',
+				'hel_o',
+				'hal_o',
+				'hzl_o',
+				'h?l*o',
+				'htl*?',
+				'hjl*?',
+				'Jt**_',
+				'qtK*_',
+				'5*i0_',
+				'q*_k_',
+				'q*_0_',
+				'S*_?_',
+				'S*_0_',
+				'5D_K_',
+				'*__05',
+				'*__**',
+				'*__*e',
+				'*__*e',
+				'*_*u_',
+				'*_*I_',
+				'*_*0_',
+				'*_*0_',
+				'*_*?_',
+				'*_X0_',
+				'*_*0_',
+				'*_*0o',
+				'S_**6',
+				'qt**D',
+				'fj*3*',
+				'_t***',
+				'_t?**',
+				'_z*0*',
+				'_:*4*',
+				'_L*4*',
+				'_ji4d',
+				'_$*4d',
+				'_$*?d',
+				'_$*4d',
+				':$*4d',
+				'ho*4d',
+				':_Xld',
+				'*__ld',
+				'*o_ld',
+				'*_rld',
+				'*_rld',
+				'w_rld',
+				'w_rld',
+				'w_rld',
+			]
+
+			var b = [
+				'world',
+				'world',
+				'wo_ld',
+				'wo_ld',
+				'_o_ld',
+				'_o_ld',
+				'_o*ld',
+				'_o*ld',
+				'_t*ld',
+				'_j*ld',
+				'Jt*ld',
+				'q_Kld',
+				'5_ild',
+				'q__l_',
+				'q__l_',
+				'S__?_',
+				'E*_0_',
+				'5D_K_',
+				'*__05',
+				'**_**',
+				'R*_*e',
+				'**_*e',
+				'***u_',
+				'***I_',
+				'***0_',
+				'***0_',
+				'*t7?_',
+				'**X0_',
+				'*_*__',
+				'*_*_o',
+				'S_*_6',
+				'qt*_D',
+				'fj*_*',
+				'_r*_*',
+				'_r?_*',
+				'_t*_*',
+				'_r*l*',
+				'_r*l*',
+				'_jil*',
+				'_$*lt',
+				'_$*l5',
+				'_$*l_',
+				':$*l_',
+				'hD**t',
+				'hDX*_',
+				'hDl*_',
+				'h_l*_',
+				'h_l**',
+				'h_ll*',
+				'h_ll_',
+				'h_ll_',
+				'h_ll_',
+			]
+
+			var word1 = 'hello', word2 = 'world';
+
+			
+			setTimeout(runText, 1500);
+
+				document.getElementById("text").innerHTML=word1
+
+				var i = 0;
+				function runText(){	
+					if(word1=='hello'){document.getElementById("text").innerHTML=a[i];}
+					if(word1=='world'){document.getElementById("text").innerHTML=b[i];}
+					if(i<a.length-1){
+						i++;	
+						setTimeout(runText, 50);
+					}
+					else{
+						document.getElementById("text").innerHTML=word2
+						
+						if(word1=='hello'){word1='world'; word2='hello';}
+						else{word1='hello'; word2='world';}
+						setTimeout(runText, 1500);
+						i=0;
+					}
+				}	
+
+
+
+
+		</script>
+
+	</body>
+</html>
